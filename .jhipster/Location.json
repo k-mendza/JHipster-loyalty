@@ -1,0 +1,30 @@
+{
+    "name": "Location",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "runDay",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "event",
+            "otherEntityRelationshipName": "location",
+            "relationshipName": "event"
+        }
+    ],
+    "changelogDate": "20190425211241",
+    "entityTableName": "location",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
